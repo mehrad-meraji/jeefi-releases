@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeefi: a GIF recorder for your Mac</title>
+<meta name="description" content="Jeefi is a see-through frame for your Mac. Put it over anything, press Record, and get a small looping GIF or MP4. Free, for macOS 15 or later.">
+<meta property="og:title" content="Jeefi: a GIF recorder for your Mac">
+<meta property="og:description" content="Put a frame over anything, press Record, get a GIF or MP4.">
+<meta property="og:image" content="media/icon-512.png">
+<meta name="theme-color" content="#120A1E">
+<link rel="icon" type="image/png" href="media/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;family=VT323&amp;display=swap">
+<style>
+body{margin:0;background:#120A1E}
+a{color:#E8B400}a:hover{color:#FFD54A}
+.up{border-top:2px solid #8C8CA8;border-left:2px solid #8C8CA8;border-bottom:2px solid #121219;border-right:2px solid #121219}
+.down{border-top:2px solid #121219;border-left:2px solid #121219;border-bottom:2px solid #8C8CA8;border-right:2px solid #8C8CA8}
+.ridges{background:repeating-linear-gradient(180deg,#6A6A86 0 1px,#26263A 1px 3px)}
+.bg-grid{background-color:#120A1E;background-image:linear-gradient(#3A1A5A 1px,transparent 1px),linear-gradient(90deg,#3A1A5A 1px,transparent 1px);background-size:40px 40px}
+.logo{color:#E8B400;background:linear-gradient(180deg,#FFF6B8 0%,#FFD84A 42%,#E8B400 58%,#8F6200 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(-2px -2px 0 #FFF9DC) drop-shadow(2px 2px 0 #4A3200) drop-shadow(4px 4px 0 rgba(0,0,0,0.45))}
+.btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;box-sizing:border-box}
+.btn:active{border-top-color:#121219;border-left-color:#121219;border-bottom-color:#8C8CA8;border-right-color:#8C8CA8}
+@media (max-width: 700px){.hero-title{font-size:48px !important;letter-spacing:4px !important}}
+</style>
+</head>
+<body>
+<div class="bg-grid" style="min-height:100vh;display:flex;flex-direction:column;font-family:Verdana,Tahoma,'DejaVu Sans',sans-serif;color:#E2E2EE">
+
+<main style="width:100%;box-sizing:border-box;max-width:1120px;margin:0 auto;padding:48px 16px 64px;display:flex;flex-direction:column;gap:72px">
+
+  <section style="display:flex;flex-direction:column;align-items:center;gap:32px">
+    <div style="display:flex;flex-direction:column;gap:20px;align-items:center;text-align:center;max-width:780px">
+      <h1 class="hero-title logo" style="margin:0;font-family:'Silkscreen',monospace;font-weight:700;font-size:72px;line-height:1;letter-spacing:8px">JEEFI</h1>
+      <p style="margin:0;font-family:'Silkscreen',monospace;font-size:12px;letter-spacing:2px;color:#E8B400">A GIF RECORDER FOR YOUR MAC</p>
+    </div>
+    <figure style="margin:0;display:flex;flex-direction:column;width:100%;max-width:720px">
+      <div style="position:relative;aspect-ratio:16 / 9;border:8px solid #3A3A50;box-shadow:0 18px 40px rgba(0,0,0,0.45)">
+        <div class="down" style="position:absolute;inset:0;background:#000000;overflow:hidden">
+          <video src="media/preview.mp4" autoplay muted loop playsinline aria-hidden="true" style="display:block;width:100%;height:100%;object-fit:cover"></video>
+        </div>
+        <div style="position:absolute;left:-8px;top:-8px;width:18px;height:18px;border-top:3px solid #E8B400;border-left:3px solid #E8B400"></div>
+        <div style="position:absolute;right:-8px;top:-8px;width:18px;height:18px;border-top:3px solid #E8B400;border-right:3px solid #E8B400"></div>
+        <div style="position:absolute;left:-8px;bottom:-8px;width:18px;height:18px;border-bottom:3px solid #E8B400;border-left:3px solid #E8B400"></div>
+        <div style="position:absolute;right:-8px;bottom:-8px;width:18px;height:18px;border-bottom:3px solid #E8B400;border-right:3px solid #E8B400"></div>
+      </div>
+      <img src="media/player-bar.png" alt="Jeefi's player bar: a green clock reading 00:00, frame rate buttons 10, 15 and 30, and Record and Stop buttons" style="display:block;width:100%;height:auto">
+    </figure>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+          <a class="btn up" href="https://github.com/mehrad-meraji/jeefi-releases/releases/latest" style="background:#4A4A64;color:#39FF6A;font-family:'Silkscreen',monospace;font-size:14px;letter-spacing:1px">▶ DOWNLOAD FOR MAC</a>
+        </div>
+      <div style="font-size:13px;color:#A9A9C2">Free · macOS 15 or later · Apple Silicon and Intel</div>
+    </div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;align-items:center;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;max-width:640px">
+      <h2 style="margin:0;font-family:'Silkscreen',monospace;font-size:24px;letter-spacing:2px;color:#FFFFFF">MAKE IT LOOK OLD</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#C9C9DC">Retro dither uses a few colours and a fixed dot pattern, for an old-computer look. Colourize turns every frame into two colours you pick. Use one, or both.</p>
+      <p style="margin:0;font-size:13px;color:#A9A9C2">The sample on this page was made with Jeefi.</p>
+    </div>
+    <div class="up" style="background:#3A3A50;padding:10px;width:100%;max-width:640px;box-sizing:border-box">
+      <video src="media/cloudy.mp4" autoplay muted loop playsinline aria-label="A sample recording of pink and blue clouds with a retro dot pattern, made with Jeefi" style="display:block;width:100%;height:auto;image-rendering:pixelated"></video>
+    </div>
+  </section>
+
+
+</main>
+
+<footer style="margin-top:auto;padding:24px 16px;text-align:center;font-size:12px;color:#A9A9C2">© 2026 Mehrad Meraji</footer>
+
+</div>
+</body>
+</html>
